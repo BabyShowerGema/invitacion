@@ -1,0 +1,256 @@
+.<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Invitación Baby Shower</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Quicksand', sans-serif;
+      overflow-x: hidden; /* ✅ Solo ocultamos el scroll horizontal */
+      overflow-y: auto;   /* ✅ Permitimos el scroll vertical natural */
+      background: url('https://pedroba10.github.io/invitacion_o/imagen1.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: #6d4c41;
+      height: 100%;
+    }
+    .nombre-elegante, .apellido-armonioso, .conector-estilizado {
+      display: inline-block;
+      margin: 0 0.2rem; /* Espacio entre elementos */
+    }
+    .contenedor {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      scroll-snap-type: y mandatory;
+      overflow-y: scroll;
+      flex: 1; /* Hace que todas las divisiones sean del mismo tamaño */
+      margin: 0 10px; /* Agrega margen a los lados */
+    }
+    .seccion, .seccion2 {
+      background: url('https://www.freepik.es/foto-gratis/papel-arrugado-marron_4833158.htm') no-repeat center center;
+      background-size: cover;
+      background-color: rgba(255, 255, 255, 0.85); /* Ligera transparencia */
+      border-radius: 20px;
+      padding: 1rem;
+    }
+    .seccion {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      scroll-snap-align: start;
+      padding: 0.5rem;
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 20px;
+      text-align: center;
+      width: 80%;
+      margin: auto;
+    }
+    .seccion2 {
+      min-height: 150vh;
+      display: inline;
+      justify-content: center;
+      align-items: center;
+      scroll-snap-align: start;
+      background: rgba(255, 255, 255, 0.85);
+      text-align: center;
+      width: 100%;
+      margin: 10px;
+    }
+    .titulo-disney {
+      font-family: 'Dancing Script', cursive;
+      font-size: 3rem;
+      color: #d67d9b;
+      line-height: 1.2;
+    }
+
+    .subtitulo-pequeño {
+      font-size: 1.5rem;
+      color: #d67d9b;
+      line-height: 1.2;
+    }
+
+    .nombre-grande {
+      font-size: 4rem;
+      font-weight: bold;
+      color: #d67d9b;
+      line-height: 1.2;
+    }
+
+    .nombre-elegante {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3.5rem;
+      font-weight: bold;
+      color: #b26c77;
+    }
+
+    .apellido-armonioso {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-style: italic;
+      color: #6d4c41;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #b26c77;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #6d4c41;
+    }
+
+    a {
+      color: #b26c77;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+    .confirmacion-asistencia {
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.5rem; /* Ajusta el tamaño según prefieras */
+      color: #b26c77; /* Mantén la armonía con el diseño */
+    }
+    .mensaje-regalo {
+      background-color: #fff8f0;
+      border-radius: 5px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #5c4033;
+      align-items: center;
+      justify-content: center;
+    }
+    .conector-estilizado {
+      font-family: 'Dancing Script', cursive;
+      font-size: 2.5rem;
+      color: #b26c77;
+      margin: 0.2rem 0;
+    }
+    .mensaje-regalo {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .itinerario {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .evento {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    
+    .evento img {
+      width: 50px;
+      height: 50px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="contenedor">
+    <!-- Primera sección -->
+    <div class="seccion">
+      <h1 class="titulo-disney">Te invitamos</h1>
+      <h2 class="subtitulo-pequeño">AL</h2>
+      <h2 style="font-family: sans-serif; font-size: 2.5rem;">BABY SHOWER</h2>
+      <h2 class="subtitulo-pequeño">DE</h2>
+      <h1 class="nombre-grande">GEMMA</h1>
+    </div>
+
+    <!-- Segunda sección (Papás) -->
+    <div class="seccion2">
+      <h2>Mis papás</h2>
+      <h1 class="nombre-elegante">Gemma</h1>
+      <h2 class="apellido-armonioso">Rosas</h2><br>
+      <h2 class="conector-estilizado">y</h2><br>
+      <h1 class="nombre-elegante">Servando</h1>
+      <h2 class="apellido-armonioso">Bautista</h2>
+      <img src="https://pedroba10.github.io/invitacion_o/imagen3.jpeg" alt="Imagen de los papás" style="max-width: 80%; border-radius: 15px; margin-top: 0.5rem;">
+      <p>Con gran alegría, nos complace anunciar que hemos decidido crecer nuestra familia con una pequeña princesa.<br><br>Este día especial es el comienzo de un nuevo capítulo en nuestra historia, un capítulo que queremos escribir junto a ustedes,
+      nuestros amigos y familiares más queridos.</p>      
+    </div>
+
+    <div class="seccion">
+      <br>
+      <img src="https://pedroba10.github.io/invitacion_o/imagen5.jpeg" alt="ultrasonido" style="max-width: 80%; border-radius: 15px; margin-top: 0.5rem;">
+      <h1 class="nombre-elegante">Oreganita</h1>
+      <p>Mis papás aún no encuentran mi nombre, pero aman decirme así.</p>      
+      <br>
+    </div><br>
+    
+    <!-- Itinerario -->
+    <div class="seccion2">
+      <h2>Itinerario</h2>
+      <div class="itinerario">
+        <div class="evento">
+          <img src="logo_bienvenida.jpeg" alt="Bienvenida">
+          <p>12 - 13hrs Bienvenida</p>
+        </div>
+        <div class="evento">
+          <img src="logo_brunch.jpeg" alt="Brunch">
+          <p>13hrs Brunch</p>
+        </div>
+        <div class="evento">
+          <img src="logo_juegos.png" alt="Juegos">
+          <p>15hrs Juegos</p>
+        </div>
+        <div class="evento">
+          <img src="logo_postres.png" alt="Postres">
+          <p>16hrs Apertura mesa de postres</p>
+        </div>
+        <div class="evento">
+          <img src="logo_dulces.jpeg" alt="Dulces salados">
+          <p>17hrs Apertura mesa de dulces salados</p>
+        </div>
+        <div class="evento">
+          <img src="imagen2.jpeg" alt="Convivencia">
+          <p>17:30hrs Convivencia</p>
+        </div>
+        <div class="evento">
+          <img src="logo_fin.jpeg" alt="Fin">
+          <p>18:30hrs Fin del baby shower</p>
+        </div>
+      </div>
+      <p><strong><i>Dresscode</i><br></strong><span style="color: #d67d9b;"><i>Brunch</i>. Colores pastel. Sugerencias de color:</span></p>
+      <img src="https://pedroba10.github.io/invitacion_o/imagen4.jpeg" alt="Dresscode" style="max-width: 80%; margin-top: 0.5rem;">
+    </div>
+    
+    <!-- Datos del evento -->
+    <div class="seccion">
+      <p>🗓️ <strong>29 de junio a las 12 pm</strong></p>
+      <p>📍 <strong>Liverpool 174, Juárez, Cuauhtémoc, 06600</strong></p>
+      <p>🗺️ <a href="https://maps.google.com?q=Liverpool+174,+Ju%C3%A1rez,+Cuauht%C3%A9moc,+06600" target="_blank">Ver en Google Maps</a></p>
+      <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSeD3C-1YxOiyHmm9KsIErOEE_GrlwAPDYtQbTxnAhBS4LWrbg/viewform" 
+       target="_blank" class="confirmacion-asistencia">Confirma tu asistencia aquí</a></p>
+      <br>
+      <img src="https://pedroba10.github.io/invitacion_o/imagen6.jpeg" alt="foto2" style="max-width: 80%; margin-top: 0.5rem;">
+      <br> <br>
+    </div> <br>
+
+    <!-- Mensaje sobre regalos -->
+    <div class="seccion">
+       <br>
+      <h2><strong>Lluvia de sobres</strong></h2>
+      <p><em>¡Hola, queridos conocidos!</em> Ya saben que nuestro nido es un lugar muy acogedor. Si desean obsequiarnos algo, podrán hacerlo en un sobre que estará disponible en el evento. Así podremos destinarlo a lo que de verdad nos hace falta.<br><strong>¡Gracias de antemano!</strong></p><br><br>
+    </div><br><br>
+  </div>
+</body>
+</html>
